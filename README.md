@@ -1,15 +1,14 @@
 # Machine Learning Portfolio
 
-**Savion Gay · Computer Engineering, University of Central Florida**  
 CAP 4611 – Algorithms for Machine Learning · Spring 2026
 
 ---
 
 ## About
 
-This repository contains five end-to-end machine learning projects completed during CAP 4611. Each project covers a distinct problem type — from exploratory analysis to neural networks — and was built on a real-world HR and news dataset. The work spans the full ML pipeline: raw data ingestion, preprocessing, feature engineering, model training, evaluation, and interpretation.
+This repository contains five end-to-end machine learning projects covering the full ML pipeline: raw data ingestion, preprocessing, feature engineering, model training, evaluation, and interpretation.
 
-These projects directly feed into larger independent work, including [Project Blackrock](https://github.com/saviongay), an ML-based swing trading system targeting large-cap US equities.
+These projects directly feed into larger independent work, including [Project Blackrock](https://github.com/SaviortheCoder), an ML-based swing trading system targeting large-cap US equities.
 
 ---
 
@@ -17,11 +16,11 @@ These projects directly feed into larger independent work, including [Project Bl
 
 | # | Project | Techniques | Dataset |
 |---|---------|------------|---------|
-| 1 | [Candidate EDA](#01---candidate-job-change-eda) | EDA, Missing Data, Distributions, Correlations | HR Analytics |
-| 2 | [Customer Spending Prediction](#02---customer-spending-prediction) | Linear Regression, Normal Equation, Gradient Descent, Regularization | E-Commerce |
-| 3 | [Employee Retention Prediction](#03---employee-retention-prediction) | Logistic Regression, KNN, Naive Bayes, SVM, Decision Trees, Random Forest, Boosting | HR Analytics |
-| 4 | [Customer Segmentation](#04---customer-segmentation-clustering) | KMeans, Elbow Method, Agglomerative Clustering | HR Analytics |
-| 5 | [Fake News Classification (NLP)](#05---fake-news-classification-nlp--deep-learning) | TF-IDF, Multinomial Naive Bayes, MLP Neural Network | ISOT Fake News |
+| 1 | [Candidate EDA](#01--candidate-job-change-eda) | EDA, Missing Data, Distributions, Correlations | HR Analytics |
+| 2 | [Customer Spending Prediction](#02--customer-spending-prediction) | Linear Regression, Normal Equation, Gradient Descent, Regularization | E-Commerce |
+| 3 | [Employee Retention Prediction](#03--employee-retention-prediction) | Logistic Regression, KNN, Naive Bayes, SVM, Decision Trees, Random Forest, Boosting | HR Analytics |
+| 4 | [Customer Segmentation](#04--customer-segmentation-clustering) | KMeans, Elbow Method, Agglomerative Clustering | HR Analytics |
+| 5 | [Fake News Classification (NLP)](#05--fake-news-classification-nlp--deep-learning) | TF-IDF, Multinomial Naive Bayes, MLP Neural Network | ISOT Fake News |
 
 ---
 
@@ -40,7 +39,7 @@ These projects directly feed into larger independent work, including [Project Bl
 - Strong class imbalance (~75/25 stay/leave split) noted for future modeling considerations
 - City development index and years of experience showed the clearest separation between classes
 
-📓 [View Notebook](01-eda-analysis/notebook.ipynb)
+📓 [View Notebook](01-eda-analysis/hr-candidate-eda.ipynb)
 
 ---
 
@@ -59,7 +58,7 @@ These projects directly feed into larger independent work, including [Project Bl
 - Lasso drove less-informative features to exactly zero — natural feature selection
 - R² of ~0.98 on test set — the features are highly predictive
 
-📓 [View Notebook](02-regression-models/notebook.ipynb)
+📓 [View Notebook](02-regression-models/customer-spending-regression.ipynb)
 
 ---
 
@@ -79,7 +78,7 @@ These projects directly feed into larger independent work, including [Project Bl
 - Random Forest and Gradient Boosting outperformed simpler classifiers on AUC
 - Decision Tree without pruning showed clear overfitting vs. ensemble methods
 
-📓 [View Notebook](03-classification-models/notebook.ipynb)
+📓 [View Notebook](03-classification-models/employee-retention-classification.ipynb)
 
 ---
 
@@ -98,7 +97,7 @@ These projects directly feed into larger independent work, including [Project Bl
 - Agglomerative clustering produced more balanced segments vs. KMeans
 - Cluster 2 ("experienced city professionals") showed the highest job-change probability — directly actionable for HR
 
-📓 [View Notebook](04-clustering/notebook.ipynb)
+📓 [View Notebook](04-clustering/customer-segmentation-clustering.ipynb)
 
 ---
 
@@ -116,7 +115,7 @@ These projects directly feed into larger independent work, including [Project Bl
 **Key Design Decision:**
 The `subject` column was intentionally excluded from the feature text. Subject values directly encode the label in this dataset (e.g., `politicsNews` = real, `leftNews` = fake), so including it would inflate accuracy through data leakage rather than genuine learned signal.
 
-📓 [View Notebook](05-nlp-deep-learning/notebook.ipynb)
+📓 [View Notebook](05-nlp-deep-learning/fake-news-nlp-classification.ipynb)
 
 ---
 
@@ -124,7 +123,7 @@ The `subject` column was intentionally excluded from the feature text. Subject v
 
 ```bash
 # Clone the repo
-git clone https://github.com/saviongay/machine-learning-portfolio.git
+git clone https://github.com/SaviortheCoder/machine-learning-portfolio.git
 cd machine-learning-portfolio
 
 # Create environment (Python 3.11)
