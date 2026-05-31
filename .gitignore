@@ -1,0 +1,27 @@
+# Large dataset - download separately (see 05-nlp-deep-learning/README.md)
+news.csv
+05-nlp-deep-learning/news.csv
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Environment
+.env
+venv/
+.venv/
+
+# Large model/data files
+*.pkl
+*.h5
+*.pt
+*.pth
